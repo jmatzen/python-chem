@@ -1,0 +1,32 @@
+{
+  "compounds": [
+    {
+      "formula": "H2",
+      "name": "Hydrogen Gas",
+      "concentration": 1.0
+    },
+    {
+      "formula": "I2",
+      "name": "Iodine Gas",
+      "concentration": 1.0
+    },
+    {
+      "formula": "HI",
+      "name": "Hydrogen Iodide",
+      "concentration": 0.0
+    }
+  ],
+  "reactions": [
+    {
+      "reactants": {
+        "formulas": ["H2", "I2"],
+        "coefficients": [1, 1]
+      },
+      "products": {
+        "formulas": ["HI"],
+        "coefficients": [2]
+      },
+      "rate_constant": 0.02
+    }
+  ]
+}

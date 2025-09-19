@@ -1,0 +1,48 @@
+{
+  "compounds": [
+    {
+      "formula": "S",
+      "name": "Substrate",
+      "concentration": 2.0
+    },
+    {
+      "formula": "E",
+      "name": "Enzyme",
+      "concentration": 0.1
+    },
+    {
+      "formula": "ES",
+      "name": "Enzyme-Substrate Complex",
+      "concentration": 0.0
+    },
+    {
+      "formula": "P",
+      "name": "Product",
+      "concentration": 0.0
+    }
+  ],
+  "reactions": [
+    {
+      "reactants": {
+        "formulas": ["E", "S"],
+        "coefficients": [1, 1]
+      },
+      "products": {
+        "formulas": ["ES"],
+        "coefficients": [1]
+      },
+      "rate_constant": 0.5
+    },
+    {
+      "reactants": {
+        "formulas": ["ES"],
+        "coefficients": [1]
+      },
+      "products": {
+        "formulas": ["E", "P"],
+        "coefficients": [1, 1]
+      },
+      "rate_constant": 0.2
+    }
+  ]
+}
